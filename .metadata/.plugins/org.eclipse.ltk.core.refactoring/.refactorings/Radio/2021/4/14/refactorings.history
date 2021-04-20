@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;Gui.setUsername(...)&apos; to &apos;setCustomUrl&apos;&#x0D;&#x0A;- Original project: &apos;Radio&apos;&#x0D;&#x0A;- Original element: &apos;Gui.setUsername(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;Gui.setCustomUrl(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;setUsername&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{Gui.java[Gui~setUsername~QJTextField;" name="setCustomUrl" references="true" stamp="1617875833144" version="1.0"/>
+</session>

@@ -1,0 +1,22 @@
+INFO  10:36:35,563 [Smack Packet Reader (0)] (XMPPConnectionService.java:104) Starting Saros 16.0.1 running:
+  Java Version: 1.8.0_251
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.17.100.v20200203-0917
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  10:36:35,635 [Smack Packet Reader (0)] (XMPPConnectionService.java:104) initializing context...
+INFO  10:36:36,483 [Smack Packet Reader (0)] (XMPPConnectionService.java:104) initializing preference default values
+INFO  10:36:36,554 [Smack Packet Reader (0)] (XMPPConnectionService.java:104) successfully initialized context
+ERROR 10:40:20,130 [Smack Packet Reader (0)] (XMPPConnectionService.java:104) XMPP connection error: 
+stream:error (conflict) text: Replaced by new connection
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:247)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:48)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:76)
+ERROR 10:40:20,141 [Smack Packet Reader (0)] (XMPPConnectionService.java:386)  new connection state == ERROR
+stream:error (conflict) text: Replaced by new connection
+	at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:247)
+	at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:48)
+	at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:76)
+INFO  12:33:22,728 [saros-shutdown] (ContainerContext.java:205) disposing context...
+INFO  12:33:22,730 [saros-shutdown] (ContainerContext.java:209) successfully disposed context
+INFO  12:33:22,891 [Framework stop] (Saros.java:137) Stopping Saros 16.0.1
