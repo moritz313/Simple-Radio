@@ -147,7 +147,7 @@ public class Gui extends JPanel
    		@Override
    		public void actionPerformed(ActionEvent e) {
    			RadioPlayer.next();
-   			Test.mainyes();
+   			
    		}
    	});
        
