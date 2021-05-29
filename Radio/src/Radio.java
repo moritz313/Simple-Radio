@@ -23,48 +23,36 @@ public class Radio {
 	public void setStream(InputStream inputStream) {
 		try {
 		     this.device = FactoryRegistry.systemRegistry().createAudioDevice();
-	            this.player = new AdvancedPlayer( inputStream, device);
-			
+	            this.player = new AdvancedPlayer( inputStream, device);			
 		} catch (JavaLayerException e) {
 			e.printStackTrace();
-		}
-		
+		}		
 	}
 	
 	public boolean isRunning() {
-		return thread !=null;
-		
+		return thread !=null;		
 	}
 	
 	public void start() {
-		Objects.requireNonNull(player);
-		
-		
+		Objects.requireNonNull(player);				
 		thread = new Thread(() -> {
 			try {
-				player.play();
-				
-			} catch (JavaLayerException e) {
-				
+				player.play();				
+			} catch (JavaLayerException e) {				
 				e.printStackTrace();
 			}
 		});
-		thread.start();
-		
-		
+		thread.start();	
+
+
 	}
 	
 	public void stop() {
 		if(isRunning()) {
 			thread.interrupt();
-			thread = null;
-			
-			
-					
-			if(player != null) {
-				
-				player.close();
-				
+			thread = null;											
+			if(player != null) {				
+				player.close();				
 			}
 		}
 	}

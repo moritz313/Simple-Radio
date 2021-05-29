@@ -24,6 +24,8 @@ public class RadioPlayer {
 	    	Gui.status.setText("Now Playing: "+NowPlaying);
           	radio.start();	
           	
+         
+          	
 	    }
 	    
 	    public static void stop() {
