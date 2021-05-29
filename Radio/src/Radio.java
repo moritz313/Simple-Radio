@@ -27,12 +27,10 @@ public class Radio {
 		} catch (JavaLayerException e) {
 			e.printStackTrace();
 		}		
-	}
-	
+	}	
 	public boolean isRunning() {
 		return thread !=null;		
-	}
-	
+	}	
 	public void start() {
 		Objects.requireNonNull(player);				
 		thread = new Thread(() -> {
@@ -43,10 +41,7 @@ public class Radio {
 			}
 		});
 		thread.start();	
-
-
-	}
-	
+	}	
 	public void stop() {
 		if(isRunning()) {
 			thread.interrupt();
@@ -55,8 +50,7 @@ public class Radio {
 				player.close();				
 			}
 		}
-	}
-	
+	}	
 	
     public void setVolume(float gain){
         if(this.volControl == null) {
@@ -79,15 +73,7 @@ public class Radio {
         if (this.volControl != null) {
             float newGain = Math.min(Math.max(gain, volControl.getMinimum()), volControl.getMaximum());
             System.out.println("Was: " + volControl.getValue() + " Will be: " + newGain);
-
             volControl.setValue(newGain);
         }
-    }
-	
-	public void setLineGain(float gain)
-	{
-	   
-	}
-	
-	
+    }	
 }

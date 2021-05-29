@@ -119,8 +119,7 @@ public class Gui extends JPanel
      
         
         
-        this.Play.addActionListener(new ActionListener() {
-			
+        this.Play.addActionListener(new ActionListener() {			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				RadioPlayer.start();
